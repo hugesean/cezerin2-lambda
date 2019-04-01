@@ -10,21 +10,21 @@ const dbCred =
 // const dbUrl =
 // 	process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 
-const dbUrl='mongodb+srv://rentklub:rentklub1234!@cluster0-yb2yn.mongodb.net/test'
+const dbUrl='<database url>'
 
 module.exports = {
 	// used by Store (server side)
-	apiBaseUrl: process.env.API_BASE_URL || `https://4ifvymmz0j.execute-api.ap-southeast-2.amazonaws.com/latest/api/v1`,
+	apiBaseUrl: process.env.API_BASE_URL || `<api url>/api/v1`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: process.env.STORE_BASE_URL || `https://rentklub-frontend-hugesean.c9users.io`,
+	storeBaseUrl: process.env.STORE_BASE_URL || `<store url>`,
 
 	// used by API
-	adminBaseURL: process.env.ADMIN_BASE_URL || 'https://rentklub-frontend.hugesean.c9users.io:8081',
+	adminBaseURL: process.env.ADMIN_BASE_URL || '<admin url>',
 	adminLoginPath: process.env.ADMIN_LOGIN_PATH || '/admin/login',
 
 	// used by API to service assets
-	assetsBaseURL: process.env.ASSETS_BASE_URL || 'https://rentklub-hugesean.c9users.io',
+	assetsBaseURL: process.env.ASSETS_BASE_URL || '<store url>',
 
 	apiListenPort: process.env.API_PORT || 8080,
 
